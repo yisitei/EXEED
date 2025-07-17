@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Showcase</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- SIDE BAR IMUT GEMOY -->
+    <aside class="sidebar">
+      <button class="tab-btn" id="menuBtn">
+        <i data-lucide="menu"></i>
+      </button>
+      <button class="tab-btn" id="workBtn">
+        <i data-lucide="book"></i>
+      </button>
+    </aside>
+
+    <!-- MAIN CONTENT + HERO SECTION -->
+    <main class="main-content">
+      <section class="hero">
+        <h3 class="hero-h3">Hi, There!</h3>
+        <h1 class="hero-h1">
+          I'm <span class="highlight-nama">Kevin Anindhito</span>
+        </h1>
+        <p>
+          Selamat datang di halaman to-do list sekaligus showcase project saya.
+          Website ini dirancang sebagai ruang pribadi sekaligus publik untuk
+          mencatat setiap ide, proses, dan progres yang saya jalani dalam
+          perjalanan saya sebagai seorang pembelajar dan pengembang web muda. Di
+          sini, Anda dapat melihat berbagai project yang sedang saya kerjakan,
+          mulai dari tahap perencanaan hingga penyelesaian. Setiap item yang
+          ditampilkan mencerminkan semangat eksplorasi, ketekunan, dan keinginan
+          saya untuk terus berkembang dalam dunia teknologi dan desain. Saya
+          percaya bahwa transparansi dalam proses berkarya dapat menginspirasi,
+          memotivasi, dan membuka peluang baru—itulah alasan utama website ini
+          dibuat.
+        </p>
+      </section>
+
+      <!-- PROJECT LIST + ID AND CLASS CARD  -->
+      <section id="card-planning" class="experience animasi">
+        <h2>Project List</h2>
+        <div class="card-container">
+          <div class="card-plan" data-status="1">
+            <img src="img/mc-server.gif" class="card-img" />
+            <h3 class="card-title">Web Porto Basic</h3>
+            <p class="card-desc">
+              Di projek ini saya membuat web basic untuk portofolio pertama saya
+              dan juga web ini di dibuat dengan tujuan experimental untuk
+              pertama kalinya saya melakukan coding.
+            </p>
+            <div class="dot-status"></div>
+            <div class="status-label">
+  <div class="status-dot-inline"></div>
+  PROGRESS
+</div>
+
+          </div>
+
+          <div class="card-plan" data-status="2">
+            <img src="img/web-dev.gif" class="card-img" />
+            <h3 class="card-title">EXEED</h3>
+            <p class="card-desc">
+              Di projek ini saya membuat web bernama EXEED dan web ini bertujuan
+              untuk me manage kerja dan work programmer melauli to dolist dan
+              dapat di pantau oleh user.
+            </p>
+            <div class="dot-status"></div>
+            <div class="status-label">
+  <div class="status-dot-inline"></div>
+  PROGRESS
+</div>
+
+          </div>
+
+          <div class="card-plan" data-status="3">
+            <img src="img/game-dev.gif" class="card-img" />
+            <h3 class="card-title">BackEnd Web</h3>
+            <p class="card-desc">
+              Di projek ini saya membuat web dengan tujuan belajar lebih lanjut
+              mengenai backend seperti penggunaan PHP,JS,JAVA dan saya juga
+              menggunakan web ini untuk framework
+            </p>
+            <div class="dot-status"></div>
+            <div class="status-label">
+  <div class="status-dot-inline"></div>
+  PROGRESS
+</div>
+          </div>
+        </div>
+      </section>
+      <script src="https://unpkg.com/lucide@latest"></script>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

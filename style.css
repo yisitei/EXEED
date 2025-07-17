@@ -1,0 +1,187 @@
+/* color pallet web 100020 ffb3ff  2a004e */
+
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body umum */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #100020;
+  color: #2c2c2c;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 60px;
+  background-color: #2a004e;
+  border-right: 2px solid #2a004e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  position: fixed;
+  height: 100vh;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  color: #ff4ecd;
+  transform: translateY(-4.5px);
+}
+
+.tab-btn.active {
+  color: #ff4ecd;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #ff4ecd;
+}
+
+.tab-btn i {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 60px;
+  padding: 40px;
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  margin-bottom: 60px;
+  padding: 40px 0;
+  color: white;
+}
+
+.hero-h3 {
+  font-size: 20px;
+  color: #ffb3ff;
+  margin-bottom: 10px;
+}
+
+.hero-h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.highlight-nama {
+  color: #ffb3ff;
+}
+
+.hero p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ffff;
+  max-width: 700px;
+  text-align: justify;
+}
+
+/* CARD PLAN */
+.card-planning {
+  margin-top: 120px;
+  margin-bottom: 80px;
+  background-color:#2a004e;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card-plan {
+  background-color: #2a004e;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.card-plan:hover {
+  transform: translateY(-10px);
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 12px;
+  border-radius: 12px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card-desc {
+  font-size: 15px;
+  color: #dddddd;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.animasi {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animasi.active {
+  padding: 40px 20px;
+  text-align: center;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+  #card-planning h2 {
+  color: #ffb3ff;
+  margin-bottom: 40px;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* DOT STATUS */
+.dot-status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+/* WARNA BERDASARKAN STATUS/KONDISI PROJECT */
+.card-plan[data-status="1"] .dot-status {
+  background-color: green; /* DONE */
+}
+
+.card-plan[data-status="2"] .dot-status {
+  background-color: orange; /* IN PROGRESS */
+}
+
+.card-plan[data-status="3"] .dot-status {
+  background-color: red; /* NOT STARTED */
+}
