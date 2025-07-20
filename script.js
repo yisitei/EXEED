@@ -38,3 +38,30 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// ========== DASHBOARD MENU ==========
+const heroSection = document.querySelector(".heroSection");
+const dashboardSection = document.getElementById("dashboardSection");
+const cardSection = document.getElementById("card-planning");
+
+const menuBtn = document.getElementById("menuBtn"); // tombol ke dashboard
+const homeBtn = document.getElementById("homeBtn"); // tombol ke home (kalo ada)
+
+menuBtn.addEventListener("click", () => {
+  // Sembunyikan bagian hero + card project
+  heroSection.classList.add("hidden");
+  cardSection.classList.add("hidden");
+
+  // Tampilkan dashboard
+  dashboardSection.classList.remove("hidden");
+});
+
+homeBtn.addEventListener("click", () => {
+  // Tampilkan kembali hero dan card project
+  heroSection.classList.remove("hidden");
+  cardSection.classList.remove("hidden");
+
+  // Sembunyikan dashboard
+  dashboardSection.classList.add("hidden");
+});
+
